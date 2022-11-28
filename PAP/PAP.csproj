@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3905EBE2-F94D-4D40-8561-DC073E1D0E07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PAP</RootNamespace>
+    <AssemblyName>PAP</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adicionar_campo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar_campo.Designer.cs">
+      <DependentUpon>Adicionar_campo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alguer_Campo_Padel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alguer_Campo_Padel.Designer.cs">
+      <DependentUpon>Alguer_Campo_Padel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alguer_Campo_Squash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alguer_Campo_Squash.Designer.cs">
+      <DependentUpon>Alguer_Campo_Squash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alguer_Campo_Ténis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alguer_Campo_Ténis.Designer.cs">
+      <DependentUpon>Alguer_Campo_Ténis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsumo.Designer.cs">
+      <DependentUpon>frmConsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaUtente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaUtente.Designer.cs">
+      <DependentUpon>frmFichaUtente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFichaProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFichaProf.Designer.cs">
+      <DependentUpon>frmFichaProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreço_Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreço_Aulas.Designer.cs">
+      <DependentUpon>frmPreço_Aulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marcação_Aula_Padel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marcação_Aula_Padel.Designer.cs">
+      <DependentUpon>Marcação_Aula_Padel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marcação_Aula_Squash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marcação_Aula_Squash.Designer.cs">
+      <DependentUpon>Marcação_Aula_Squash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marcação_Aula_Ténis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marcação_Aula_Ténis.Designer.cs">
+      <DependentUpon>Marcação_Aula_Ténis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProf.Designer.cs">
+      <DependentUpon>NewProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewUtent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewUtent.Designer.cs">
+      <DependentUpon>NewUtent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adicionar_campo.resx">
+      <DependentUpon>Adicionar_campo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alguer_Campo_Padel.resx">
+      <DependentUpon>Alguer_Campo_Padel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alguer_Campo_Squash.resx">
+      <DependentUpon>Alguer_Campo_Squash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alguer_Campo_Ténis.resx">
+      <DependentUpon>Alguer_Campo_Ténis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsumo.resx">
+      <DependentUpon>frmConsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaUtente.resx">
+      <DependentUpon>frmFichaUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFichaProf.resx">
+      <DependentUpon>frmFichaProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreço_Aulas.resx">
+      <DependentUpon>frmPreço_Aulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marcação_Aula_Padel.resx">
+      <DependentUpon>Marcação_Aula_Padel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marcação_Aula_Squash.resx">
+      <DependentUpon>Marcação_Aula_Squash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marcação_Aula_Ténis.resx">
+      <DependentUpon>Marcação_Aula_Ténis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProf.resx">
+      <DependentUpon>NewProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewUtent.resx">
+      <DependentUpon>NewUtent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
